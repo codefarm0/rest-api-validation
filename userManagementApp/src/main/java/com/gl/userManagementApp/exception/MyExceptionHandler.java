@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 /**
  * @author - GreenLearner(https://www.youtube.com/c/greenlearner)
  */
-
+@ControllerAdvice
 public class MyExceptionHandler extends ResponseEntityExceptionHandler {
 
     @Override
