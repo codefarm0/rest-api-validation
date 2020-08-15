@@ -2,7 +2,9 @@ package com.gl.userManagementApp.dto;
 
 import org.hibernate.validator.constraints.Length;
 
+import javax.validation.Valid;
 import javax.validation.constraints.*;
+import java.util.List;
 
 public class User {
 
@@ -17,6 +19,10 @@ public class User {
     @AddressValidation
     private String address;
 
+
+//    @AddressObjectValidation(message = "at least 2 addresses")
+    @Valid
+    private List<Address> addresses;
     @Email
     private String email;
 
@@ -65,5 +71,13 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public List<Address> getAddresses() {
+        return addresses;
+    }
+
+    public void setAddresses(List<Address> addresses) {
+        this.addresses = addresses;
     }
 }
