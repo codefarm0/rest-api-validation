@@ -39,7 +39,14 @@ The design has been explained in following ppt -
         {
           "id": "1234",
           "name": "green learner123",
-          "address": "delhi"
+          "address": "delhi",
+          "addresses": [
+    {
+     "line1": "noida", 
+      "line2": "u.p.",
+      "pinCode": "223422"
+    }
+  ],
         }
         
 * update user - Put method > http://localhost:8082/user
@@ -48,7 +55,14 @@ The design has been explained in following ppt -
         {
           "id": "1234",
           "name": "green learner123-updated",
-          "address": "delhi-updated"
+          "address": "delhi-updated",
+          "addresses": [
+    {
+     "line1": "noida", 
+      "line2": "u.p.",
+      "pinCode": "223422"
+    }
+  ],
         }
         
 * Get single user - GET method > http://localhost:8082/user/123
